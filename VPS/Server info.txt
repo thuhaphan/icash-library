@@ -1,0 +1,69 @@
+*********** SERVER INFO *****************
+- 172.104.53.119
+- Thuhuyenanh1996
+
+*********** DATABASES *****************
+
+-- DEV
+
+mysql server :
+url : localhost:3306
+user : root
+pw : icash.com
+
+-- PRODUCTION
+
+
+
+--------------------
+
+start spring boot service
+--------------------------
+
+systemctl start icash-service
+systemctl stop icash-service
+systemctl restart icash-service
+systemctl status icash-service
+
+---------------
+icash-service.service
+startretries=3
+stdout_logfile=/var/log/yourapp-stdout.log
+stderr_logfile=/var/log/yourapp-stderr.log
+
+---------------------
+application AES key [DEV] : icash.com
+application AES key [PRODUCTION] = 1c@SHvn!.Comm@
+
+application Jasypt key [DEV] : 3td.1C@shvn.c0nn
+
+
+
+
+*********** COMMANS COMMAND *****************
+
+- rename file : mv (option) filename1.ext filename2.ext
+- Move file : sudo mv info.txt config/
+- delete file : rm -f 2.mp3 blabla.mp3
+- copy file to another folder : cp filename /tmp
+
+
+- Logger : 
+Just use the journalctl command, as in:
+
+journalctl -u service-name.service
+Or, to see only log messages for the current boot:
+
+journalctl -u service-name.service -b
+For things named <something>.service, you can actually just use <something>, as in:
+
+journalctl -u service-name
+
+
+journalctl -u icash-service -f
+ 
+ 
+pw : -Dspring.profiles.active=dev -Djasypt.encryptor.password=3td.1C@shvn.c0nn
+
+<th>affpaying, adswikia, affplus</th>
+            <th>https://surveys.google.com/google-opinion-rewards/publishers/#?modal_active=none</th>
